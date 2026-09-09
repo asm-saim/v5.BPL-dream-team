@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "playerName": "Shakib Al Hasan",
+    "playerImg": "https://images.unsplash.com/photo-1531415074968-036ba1b575da",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Left-Arm Orthodox",
+    "price": 1200000
+  },
+  {
+    "id": 2,
+    "playerName": "Virat Kohli",
+    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "origin": "India",
+    "playerType": "Batsman",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Medium",
+    "price": 1500000
+  },
+  {
+    "id": 3,
+    "playerName": "Babar Azam",
+    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "origin": "Pakistan",
+    "playerType": "Batsman",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Off Break",
+    "price": 1400000
+  },
+  {
+    "id": 4,
+    "playerName": "Rohit Sharma",
+    "playerImg": "https://images.unsplash.com/photo-1531415074968-036ba1b575da",
+    "origin": "India",
+    "playerType": "Batsman",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Off Break",
+    "price": 1350000
+  },
+  {
+    "id": 5,
+    "playerName": "Trent Boult",
+    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "origin": "New Zealand",
+    "playerType": "Bowler",
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Left-Arm Fast",
+    "price": 1100000
+  },
+  {
+    "id": 6,
+    "playerName": "Jos Buttler",
+    "playerImg": "https://images.unsplash.com/photo-1531415074968-036ba1b575da",
+    "origin": "England",
+    "playerType": "Wicketkeeper-Batsman",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Medium",
+    "price": 1250000
+  },
+  {
+    "id": 7,
+    "playerName": "Rashid Khan",
+    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "origin": "Afghanistan",
+    "playerType": "Bowler",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Leg Break",
+    "price": 1000000
+  },
+  {
+    "id": 8,
+    "playerName": "Kane Williamson",
+    "playerImg": "https://images.unsplash.com/photo-1531415074968-036ba1b575da",
+    "origin": "New Zealand",
+    "playerType": "Batsman",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Off Break",
+    "price": 1150000
+  },
+  {
+    "id": 9,
+    "playerName": "Jofra Archer",
+    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "origin": "England",
+    "playerType": "Bowler",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Fast",
+    "price": 1050000
+  }
+]
