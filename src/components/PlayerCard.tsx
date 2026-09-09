@@ -46,7 +46,7 @@ const PlayerCard = ({ player }: PlayerCardProps) => {
             <p className="text-xl font-bold text-green-600">${player.price.toLocaleString()}</p>
           </div>
 
-          <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors duration-200">
+          <button className="btn border-none bg-green-600 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded-lg transition-colors duration-200">
             Choose Player
           </button>
         </div>
