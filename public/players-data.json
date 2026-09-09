@@ -2,7 +2,7 @@
   {
     "id": 1,
     "playerName": "Shakib Al Hasan",
-    "playerImg": "https://images.unsplash.com/photo-1531415074968-036ba1b575da",
+    "playerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/386900/386997.6.jpg",
     "origin": "Bangladesh",
     "playerType": "All-Rounder",
     "battingStyle": "Left-Handed",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "playerName": "Virat Kohli",
-    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "playerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/386900/386997.6.jpg",
     "origin": "India",
     "playerType": "Batsman",
     "battingStyle": "Right-Handed",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "playerName": "Babar Azam",
-    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "playerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/386900/386997.6.jpg",
     "origin": "Pakistan",
     "playerType": "Batsman",
     "battingStyle": "Right-Handed",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "playerName": "Rohit Sharma",
-    "playerImg": "https://images.unsplash.com/photo-1531415074968-036ba1b575da",
+    "playerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/386900/386997.6.jpg",
     "origin": "India",
     "playerType": "Batsman",
     "battingStyle": "Right-Handed",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "playerName": "Trent Boult",
-    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "playerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/386900/386997.6.jpg",
     "origin": "New Zealand",
     "playerType": "Bowler",
     "battingStyle": "Left-Handed",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "playerName": "Jos Buttler",
-    "playerImg": "https://images.unsplash.com/photo-1531415074968-036ba1b575da",
+    "playerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/386900/386997.6.jpg",
     "origin": "England",
     "playerType": "Wicketkeeper-Batsman",
     "battingStyle": "Right-Handed",
@@ -62,7 +62,7 @@
   {
     "id": 7,
     "playerName": "Rashid Khan",
-    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "playerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/386900/386997.6.jpg",
     "origin": "Afghanistan",
     "playerType": "Bowler",
     "battingStyle": "Right-Handed",
@@ -72,7 +72,7 @@
   {
     "id": 8,
     "playerName": "Kane Williamson",
-    "playerImg": "https://images.unsplash.com/photo-1531415074968-036ba1b575da",
+    "playerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/386900/386997.6.jpg",
     "origin": "New Zealand",
     "playerType": "Batsman",
     "battingStyle": "Right-Handed",
@@ -82,7 +82,7 @@
   {
     "id": 9,
     "playerName": "Jofra Archer",
-    "playerImg": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "playerImg": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/386900/386997.6.jpg",
     "origin": "England",
     "playerType": "Bowler",
     "battingStyle": "Right-Handed",

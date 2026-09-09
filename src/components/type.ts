@@ -1,7 +1,7 @@
 export interface IPlayers {
   id: number;
   playerName: string;
-  playerImage: string;
+  playerImg: string;
   origin: string;
   playerType: string;
   battingStyle: string;
