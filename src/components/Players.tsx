@@ -3,16 +3,18 @@ import type { IPlayers } from "./type";
 import AvailablePlayer from "./AvailablePlayer";
 import SelectedPlayers from "./SelectedPlayers";
 interface PlayersProps {
-  playersInfo: Promise<IPlayers[]>
-  coin:number,
-  setCoin:Dispatch<SetStateAction<number>>
+  playersInfo: Promise<IPlayers[]>;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
 }
 
 const Players = ({ playersInfo, coin, setCoin }: PlayersProps) => {
   const playersData = use(playersInfo);
 
-  //
   const [buttonType, setButtonType] = useState("available");
+
+  //state for selected Players:
+  const [selectedPlayers, setSelectedPlayers] = useState<IPlayers[]>([]);
 
   const handleButtonType = (type: "available" | "selected") => {
     setButtonType(type);
@@ -40,9 +42,15 @@ const Players = ({ playersInfo, coin, setCoin }: PlayersProps) => {
       </div>
       <div>
         {buttonType === "available" ? (
-          <AvailablePlayer playersData={playersData} coin={coin} setCoin={setCoin}></AvailablePlayer>
+          <AvailablePlayer
+            selectedPlayers={selectedPlayers}
+            setSelectedPlayers={setSelectedPlayers}
+            playersData={playersData}
+            coin={coin}
+            setCoin={setCoin}
+          ></AvailablePlayer>
         ) : (
-          <SelectedPlayers></SelectedPlayers>
+          <SelectedPlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}></SelectedPlayers>
         )}
       </div>
     </div>

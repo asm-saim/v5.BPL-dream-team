@@ -6,14 +6,17 @@ interface PlayerCardProps {
   player: IPlayers;
   coin: number;
   setCoin: Dispatch<SetStateAction<number>>;
+  selectedPlayers: IPlayers[];
+  setSelectedPlayers: Dispatch<SetStateAction<IPlayers[]>>;
 }
 
-const PlayerCard = ({ player, coin, setCoin }: PlayerCardProps) => {
+const PlayerCard = ({ player, coin, setCoin, selectedPlayers, setSelectedPlayers }: PlayerCardProps) => {
   //state:
   const [isSelected, setIsSelected] = useState(false);
 
   //Event handler fro coin:
   const handlePlayers = () => {
+    setSelectedPlayers([...selectedPlayers, player]);
     setIsSelected(true);
     const newCoin = coin - player.price;
     if (newCoin >= 0) {
