@@ -1,13 +1,26 @@
-import { useState } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 import type { IPlayers } from "./type";
 
 interface PlayerCardProps {
   player: IPlayers;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
 }
 
-const PlayerCard = ({ player }: PlayerCardProps) => {
+const PlayerCard = ({ player, coin, setCoin }: PlayerCardProps) => {
   //state:
   const [isSelected, setIsSelected] = useState(false);
+
+  //Event handler fro coin:
+  const handlePlayers = () => {
+    setIsSelected(true);
+    const newCoin = coin - player.price;
+    if (newCoin >= 0) {
+      setCoin(newCoin);
+    } else {
+      alert("Insufficient Balance");
+    }
+  };
 
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100">
@@ -51,9 +64,10 @@ const PlayerCard = ({ player }: PlayerCardProps) => {
           </div>
 
           <button
-            onClick={() => setIsSelected(true)}
+            onClick={handlePlayers}
             className="btn border-none bg-green-600 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded-lg transition-colors duration-200"
             disabled={isSelected ? true : false}
+            // disabled={isSelected}
           >
             {isSelected === true ? "Selected" : "Choose Player"}
           </button>

@@ -1,6 +1,12 @@
+import type { Dispatch, SetStateAction } from "react";
 import NavImage from "../assets/logo.png";
 
-const Navbar = () => {
+interface ICoin {
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
+}
+
+const Navbar = ({ coin, setCoin }: ICoin) => {
   return (
     <div className="bg-blue-200">
       <nav className="flex justify-between max-w-6xl mx-auto p-1">
@@ -12,7 +18,7 @@ const Navbar = () => {
             <li>Teams</li>
             <li>Schedules</li>
           </ul>
-          <button className="btn bg-blue-800 border-none">Coin</button>
+          <button className="btn bg-blue-800 border-none">{coin}</button>
         </div>
       </nav>
     </div>

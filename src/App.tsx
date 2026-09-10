@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 import Players from "./components/Players";
@@ -12,12 +12,15 @@ const playersData = async () => {
 const playersInfo = playersData();
 
 function App() {
+  //coins state:
+  const [coin, setCoin] = useState(5000);
+
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar coin={coin} setCoin={setCoin}></Navbar>
       <Banner></Banner>
       <Suspense fallback={"Loading...."}>
-        <Players playersInfo={playersInfo}></Players>
+        <Players playersInfo={playersInfo} coin={coin} setCoin={setCoin}></Players>
       </Suspense>
     </>
   );
