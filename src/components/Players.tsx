@@ -1,12 +1,13 @@
 import { use, useState } from "react";
 import type { IPlayers } from "./type";
 import AvailablePlayer from "./AvailablePlayer";
+import SelectedPlayers from "./SelectedPlayers";
 interface PlayersProps {
   playersInfo: Promise<IPlayers[]>;
 }
 
 const Players = ({ playersInfo }: PlayersProps) => {
-  const playersInformation = use(playersInfo);
+  const playersData = use(playersInfo);
 
   //
   const [buttonType, setButtonType] = useState("available");
@@ -17,9 +18,9 @@ const Players = ({ playersInfo }: PlayersProps) => {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <h2>{playersInformation.length}</h2>
+      <h2>{playersData.length}</h2>
       <div className="flex justify-between items-center py-5">
-        <h2 className="text-xl font-bold">Available Players</h2>
+        <h2 className="text-xl font-bold">{buttonType === "available" ? "Available Players" : "Selected Players"}</h2>
         <div className="flex">
           <button
             onClick={() => handleButtonType("available")}
@@ -35,7 +36,13 @@ const Players = ({ playersInfo }: PlayersProps) => {
           </button>
         </div>
       </div>
-      <div>{<AvailablePlayer playersInformation={playersInformation}></AvailablePlayer>}</div>
+      <div>
+        {buttonType === "available" ? (
+          <AvailablePlayer playersData={playersData}></AvailablePlayer>
+        ) : (
+          <SelectedPlayers></SelectedPlayers>
+        )}
+      </div>
     </div>
   );
 };
