@@ -1,5 +1,6 @@
 import { useState, type Dispatch, type SetStateAction } from "react";
 import type { IPlayers } from "./type";
+import { Bounce, toast } from "react-toastify";
 
 interface PlayerCardProps {
   player: IPlayers;
@@ -17,8 +18,29 @@ const PlayerCard = ({ player, coin, setCoin }: PlayerCardProps) => {
     const newCoin = coin - player.price;
     if (newCoin >= 0) {
       setCoin(newCoin);
+      toast.success(`${player.playerName} is purchased`, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
     } else {
-      alert("Insufficient Balance");
+      toast.error('"Insufficient Balance"!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
     }
   };
 

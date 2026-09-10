@@ -13,7 +13,7 @@ const playersInfo = playersData();
 
 function App() {
   //coins state:
-  const [coin, setCoin] = useState(5000);
+  const [coin, setCoin] = useState(2000);
 
   return (
     <>
