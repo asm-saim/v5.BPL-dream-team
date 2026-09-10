@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { IPlayers } from "./type";
 
 interface PlayerCardProps {
@@ -5,6 +6,9 @@ interface PlayerCardProps {
 }
 
 const PlayerCard = ({ player }: PlayerCardProps) => {
+  //state:
+  const [isSelected, setIsSelected] = useState(false);
+
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100">
       {/* Player Image */}
@@ -46,8 +50,12 @@ const PlayerCard = ({ player }: PlayerCardProps) => {
             <p className="text-xl font-bold text-green-600">${player.price.toLocaleString()}</p>
           </div>
 
-          <button className="btn border-none bg-green-600 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded-lg transition-colors duration-200">
-            Choose Player
+          <button
+            onClick={() => setIsSelected(true)}
+            className="btn border-none bg-green-600 hover:bg-green-800 text-white font-semibold px-4 py-2 rounded-lg transition-colors duration-200"
+            disabled={isSelected ? true : false}
+          >
+            {isSelected === true ? "Selected" : "Choose Player"}
           </button>
         </div>
       </div>
