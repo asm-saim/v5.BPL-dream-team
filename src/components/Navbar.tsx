@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import NavImage from "../assets/logo.png";
+import { AiFillDollarCircle } from "react-icons/ai";
 
 interface ICoin {
   coin: number;
@@ -18,7 +19,11 @@ const Navbar = ({ coin, setCoin }: ICoin) => {
             <li>Teams</li>
             <li>Schedules</li>
           </ul>
-          <button className="btn bg-blue-800 border-none">{coin}</button>
+          <button className="btn bg-blue-600 text-xl border-none">
+            <AiFillDollarCircle />
+
+            {coin}
+          </button>
         </div>
       </nav>
     </div>
